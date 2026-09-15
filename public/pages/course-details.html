@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details | Skillora</title>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/course-details.css">
+</head>
+<body>
+<!-- ========================= NAVBAR ========================== -->
+<nav class="navbar">
+        <a href="../index.html" class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2> Skill<span>ora</span></h2>
+        </a>
+        <div class="course-nav-actions">
+           <button class="wishlist-nav" id="wishlistNavBtn" aria-label="Wishlist" title="Wishlist"> <i class="fa-regular fa-heart"></i></button>
+           <button type="button" class="profile-nav" id="profileNavBtn" aria-label="Open Profile" title="Profile">
+               <i class="fa-regular fa-user"></i>
+            </button>
+        </div>
+</nav>
+<div class="course-back-container">
+
+    <a href="../index.html" class="course-back-home">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Back to Home</span>
+    </a>
+
+</div>
+<!-- ========================= COURSE HERO ========================== -->
+<section class="course-hero">
+        <div class="course-hero-container">
+            <!-- COURSE IMAGE -->
+            <div class="course-image-box">
+                <img id="courseImage" src="../images/courses/js.jpg" alt="Course">
+                <div class="course-image-overlay">
+                    <span><i class="fa-solid fa-play"></i> Course Preview </span>
+                </div>
+            </div>
+            <!-- COURSE INFORMATION -->
+            <div class="course-hero-content">
+                <span  class="course-category" id="courseCategory">  Programming </span>
+                <h1 id="courseTitle">  JavaScript for Beginners</h1>
+                <p class="course-description"  id="courseDescription"> Learn JavaScript from the beginning and build a 
+                    strong foundation in modern web development. </p>
+                <!-- RATING -->
+                <div class="course-rating">
+                    <span class="rating-number" id="courseRating">4.9</span>
+                    <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 
+                    </span>
+                    <span  class="review-count" id="reviewCount"> 245 reviews </span>
+                </div>
+                <!-- COURSE META -->
+                <div class="course-meta">
+                    <div class="meta-item">
+                        <i class="fa-solid fa-users"></i>
+                        <div>
+                            <span> Students </span>
+                            <strong id="studentCount"> 1,250</strong>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <span> Duration</span>
+                            <strong id="courseDuration"> 12 hours</strong>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fa-solid fa-signal"></i>
+                        <div>
+                            <span>Level</span>
+                            <strong id="courseLevel"> Beginner</strong>
+                        </div>
+                    </div>
+                </div>
+                <!-- INSTRUCTOR -->
+                <div class="course-instructor-small">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>
+                        Created by
+                        <strong id="instructorName"> Ahmed Hassan </strong>
+                    </span>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- ========================= MAIN CONTENT ========================== -->
+<main class="course-main">
+        <div class="course-main-container">
+            <!-- =========================  LEFT SIDE  ========================== -->
+            <div class="course-content">
+                <!-- WHAT YOU'LL LEARN -->
+                <section class="content-section">
+                    <h2> What You'll Learn</h2>
+                    <div class="learning-grid" id="learningGrid">
+                        <!-- JavaScript will add items here -->
+                    </div>
+                </section>
+
+                <!-- ABOUT COURSE -->
+                <section class="content-section">
+                    <h2> About This Course </h2>
+                    <div id="courseAbout">
+                        <!-- JavaScript will add paragraphs here -->
+                    </div>
+                </section>
+
+                <!-- COURSE CONTENT -->
+                <section class="content-section curriculum-section">
+                    <div class="section-heading-row">
+                        <div>
+                            <h2> Course Content </h2>
+                            <p id="curriculumSummary"> 4 sections • 16 lessons • 12 hours</p>
+                        </div>
+                        <button id="expandAllBtn" class="expand-btn"> Expand All </button>
+                    </div>
+                    <!-- CURRICULUM WILL BE GENERATED HERE -->
+                    <div id="curriculumContainer">
+                        <!-- JavaScript will add sections here -->
+                    </div>
+                </section>
+
+                <!-- ========================= INSTRUCTOR ========================== -->
+                <section class="content-section instructor-section">
+                    <h2> Your Instructor</h2>
+                    <div class="instructor-card">
+                        <div class="instructor-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="instructor-info">
+                            <h3 id="instructorNameLarge">Ahmed Hassan</h3>
+                            <p id="instructorRole"> Web Development Instructor</p>
+                            <div class="instructor-stats">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span id="instructorRating"> 4.9 Instructor Rating</span>
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-users"></i>
+                                    <span id="instructorStudents"> 12,000+ Students</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ========================= RIGHT SIDE ========================== -->
+            <aside class="enrollment-card">
+                <div class="price-box">
+                    <span class="price" id="coursePrice"> $19.99</span>
+                </div>
+                <button class="enroll-btn" id="enrollBtn"> Enroll Now <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="wishlist-btn" id="wishlistBtn"><i class="fa-regular fa-heart"></i> Add to Wishlist</button>
+                <div class="card-divider"></div>
+                <h3>This course includes:</h3>
+                <ul
+                    class="course-features"
+                    id="courseFeatures">
+                    <!-- JavaScript will add features -->
+                </ul>
+                <div class="secure-payment">
+                    <i class="fa-solid fa-lock"></i>
+                    <span> Secure payment & safe checkout</span>
+                </div>
+            </aside>
+        </div>
+</main>
+
+
+<!-- ========================= FOOTER ========================== -->
+<footer class="footer">
+        <div class="footer-container">
+            <!-- BRAND -->
+            <div class="footer-brand">
+                <a href="../index.html" class="logo footer-logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2> Skill<span>ora</span></h2> </a>
+                <p> Learn practical skills, practice with confidence, and build your future with Skillora.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"> <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i> </a>
+                    <a href="#" aria-label="LinkedIn"> <i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"> <i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <!-- PLATFORM -->
+            <div class="footer-column">
+                <h3> Platform</h3>
+                <a href="../index.html"> Home</a>
+                <a href="../index.html#courses-section"> Courses</a>
+                <a href="../index.html#about-section"> About Us </a>
+                <a href="../index.html#contact-section"> Contact</a>
+            </div>
+            <!-- CATEGORIES -->
+            <div class="footer-column">
+                <h3> Categories </h3>
+                <a href="../index.html#courses-section">  Web Development</a>
+                <a href="../index.html#courses-section"> Programming </a>
+                <a href="../index.html#courses-section"> UI/UX Design</a>
+                <a href="../index.html#courses-section"> Data Analysis</a>
+                <a href="../index.html#courses-section">Business</a>
+            </div>
+            <!-- CONTACT -->
+            <div class="footer-column footer-contact">
+                <h3> Get In Touch</h3>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span> support@skillora.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+20 100 000 0000</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Cairo, Egypt</span>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p> © 2026 Skillora. All rights reserved. </p>
+                <div class="footer-legal">
+                    <a href="privacy.html"> Privacy Policy</a>
+                    <span>|</span>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+</footer>
+
+<!-- ========================= ENROLL NOW POPUP ================== -->
+<div class="course-popup" id="coursePopup">
+        <div class="course-popup-box">
+            <button class="popup-close" id="popupClose"> <i class="fa-solid fa-xmark"></i></button>
+            <div class="popup-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 id="popupTitle">Ready to Learn!</h3>
+            <p id="popupMessage"> You have selected this course. </p>
+            <button class="popup-ok" id="popupOk">OK</button>
+        </div>
+</div>
+
+<!-- ====== WISHLIST POPUP ======= -->
+<div class="wishlist-overlay" id="wishlistOverlay">
+    <div class="wishlist-popup">
+        <!-- HEADER -->
+        <div class="wishlist-popup-header">
+            <div>
+                <h2>My Wishlist</h2>
+                <p id="wishlistCount">  0 courses saved </p>
+            </div>
+            <button class="wishlist-close" id="wishlistClose" aria-label="Close Wishlist">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <!-- COURSES -->
+        <div class="wishlist-popup-content" id="wishlistPopupContent"></div>
+
+        <!-- EMPTY STATE -->
+        <div
+            class="wishlist-popup-empty"
+            id="wishlistPopupEmpty">
+            <div class="wishlist-empty-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3> Your wishlist is empty</h3>
+            <p> Save courses you want to learn and find them here later. </p>
+        </div>
+    </div>
+</div>
+
+<!-- ====== MY COURSES POPUP ====== -->
+<div class="user-page-overlay" id="myCoursesOverlay">
+<div class="user-page-popup">
+    <button type="button" class="user-page-close" id="myCoursesClose" aria-label="Close My Courses">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="user-page-header">
+        <div class="user-page-icon"> <i class="fa-solid fa-book-open"></i></div>
+        <div>
+            <span>Learning</span>
+            <h2>My Courses</h2>
+            <p>Continue your learning journey.</p>
+        </div>
+    </div>
+    <div class="my-courses-list" id="myCoursesList">
+        <!-- Enrolled courses will appear here -->
+    </div>
+    <div class="my-courses-empty" id="myCoursesEmpty">
+        <div class="empty-icon">
+            <i class="fa-solid fa-book-open"></i>
+        </div>
+        <h3>No Courses Yet</h3>
+        <p> You haven't enrolled in any courses yet. Start learning today!</p>
+        <button type="button" class="browse-courses-btn" id="browseCoursesBtn"> Browse Courses</button>
+    </div>
+</div>
+</div>
+
+<!-- ======  PAYMENT DETAILS POPUP ===== -->
+<div class="payment-overlay" id="paymentOverlay">
+    <div class="payment-popup">
+        <button type="button"class="payment-close" id="paymentClose" aria-label="Close Payment Details">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="payment-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <span class="payment-label"> Payment </span>
+        <h2> Payment details sent!</h2>
+        <p id="paymentMessage"> Payment details for your course have been sent to your email.</p>
+        <button type="button" class="payment-ok-btn" id="paymentOkBtn">OK </button>
+    </div>
+</div>
+
+<!-- ========= MY PROFILE POPUP ======= -->
+<div class="user-page-overlay" id="myProfileOverlay">
+<div class="user-page-popup profile-popup">
+    <button type="button" class="user-page-close" id="myProfileClose" aria-label="Close My Profile">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="user-page-header">
+        <div class="user-page-icon">
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <div>
+            <span>Account</span>
+            <h2>My Profile</h2>
+            <p>Manage your personal information.</p>
+        </div>
+    </div>
+    <div class="profile-avatar-section">
+        <div class="profile-large-avatar"> <i class="fa-regular fa-user"></i></div>
+        <div>
+            <h3 id="profileDisplayName">User</h3>
+            <p id="profileDisplayEmail">email@example.com</p>
+        </div>
+    </div>
+    <form id="profileForm">
+        <div class="profile-field">
+            <label for="profileName">Full Name</label>
+            <div class="profile-input">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" id="profileName" placeholder="Enter your name" autocomplete="name">
+            </div>
+        </div>
+        <div class="profile-field">
+            <label for="profileEmail">  Email Address</label>
+            <div class="profile-input">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="profileEmail" placeholder="Enter your email" autocomplete="email" readonly>
+            </div>
+        </div>
+        <p class="profile-message" id="profileMessage"></p>
+        <button type="submit" class="profile-save-btn">
+            <i class="fa-solid fa-check"></i>
+            Save Changes
+        </button>
+    </form>
+</div>
+</div>
+
+<!-- ====== DASHBOARD POPUP ====== -->
+<div class="dashboard-overlay" id="dashboardOverlay">
+    <div class="dashboard-popup">
+        <!-- CLOSE -->
+        <button type="button" class="dashboard-close" id="dashboardClose" aria-label="Close Dashboard">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <!-- USER INFO -->
+        <div class="dashboard-profile">
+            <div class="dashboard-avatar">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="dashboard-user-info">
+                <span>Welcome back!</span>
+                <h2 id="dashboardUserName">User</h2>
+                <p id="dashboardUserEmail"> email@example.com</p>
+            </div>
+        </div>
+        <!-- MENU -->
+        <div class="dashboard-menu">
+            <button type="button" class="dashboard-item" id="dashboardCourses">
+                <div class="dashboard-item-icon"><i class="fa-solid fa-book-open"></i></div>
+                <span>My Courses</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <button type="button" class="dashboard-item" id="dashboardWishlist">
+                <div class="dashboard-item-icon"> <i class="fa-regular fa-heart"></i></div>
+                <span>My Wishlist</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <button type="button" class="dashboard-item" id="dashboardProfile">
+                <div class="dashboard-item-icon"><i class="fa-regular fa-user"></i></div>
+                <span>My Profile</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <!-- LOGOUT -->
+        <button type="button" class="dashboard-logout" id="dashboardLogout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+        </button>
+    </div>
+</div>
+
+<script src="../js/course-details.js"></script>
+</body>
+</html>

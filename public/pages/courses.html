@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillora - Courses</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/courses.css">
+</head>
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+        <!-- Logo -->
+        <a href="../index.html" class="logo"> <i class="fa-solid fa-graduation-cap"></i><h2>Skillora</h2></a>
+        <!-- Navigation -->
+        <div class="sections">
+            <a href="../index.html">Home</a>
+            <a href="courses.html" class="active">Courses</a>
+            <a href="#">About</a>
+            <a href="#">Become a Teacher</a>
+        </div>
+        <!-- Right Side -->
+        <div class="nav-right">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="navSearch" placeholder="Search courses...">
+         </div>
+            <button type="button" class="btn1"> Login</button>
+            <button type="button" class="btn2">Sign Up </button>
+        </div>
+    </nav>
+    <!-- ================= PAGE HERO ================= -->
+    <main>
+        <section class="courses-hero">
+            <div class="courses-hero-content">
+                <span class="small-title">
+                    <i class="fa-solid fa-book-open"></i>Explore & Learn</span>
+                <h1>Explore Our <span>Courses</span></h1>
+                <p> Learn from industry experts and build the skills you need to achieve your goals.</p>
+
+                <!-- Main Search -->
+                <div class="course-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text"id="courseSearch"placeholder="Search for courses, topics, or instructors...">
+                    <button id="searchBtn">Search</button>
+                </div>
+            </div>
+        </section>
+        <!-- ================= COURSES SECTION ================= -->
+        <section class="courses-section">
+            <div class="courses-container">
+                <!-- Heading -->
+                <div class="section-heading">
+                    <div>
+                        <h2>All Courses</h2>
+                        <p>Choose from our wide range of courses and start learning today.</p>
+                    </div>
+                    <div class="course-count">
+                        <span id="courseCount">12</span>
+                        Courses
+                    </div>
+                </div>
+
+                <!-- ================= FILTERS ================= -->
+                <div class="course-filters">
+                    <button class="filter-btn active"data-category="all">All Courses </button>
+                    <button class="filter-btn" data-category="web"> Web Development </button>
+                    <button class="filter-btn"data-category="programming">Programming </button>
+                    <button class="filter-btn"  data-category="ui/ux"> UI/UX Design </button>
+                    <button class="filter-btn" data-category="data"> Data Science </button>
+                    <button class="filter-btn" data-category="business">Business</button>
+                </div>
+                <!-- ================= COURSE GRID ================= -->
+                <div class="courses-grid" id="coursesGrid">
+                    <!-- COURSE 1 -->
+                    <div
+                        class="course-card" data-category="programming" data-title="javascript for beginners" data-instructor="ahmed hassan">
+                        <div class="course-image">
+                            <img src="../images/courses/js.jpg"alt="JavaScript for Beginners">
+                            <span class="course-badge">Bestseller</span>
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category"> Programming </span>
+                            <h3> JavaScript for Beginners</h3>
+                            <p class="instructor">By Ahmed Hassan</p>
+                            <div class="course-rating">
+                                <span class="rating">4.8</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (1.2k)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong>  $49.99 </strong>
+                                <a href="course-details.html?course=javascript"> View Course <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 2 -->
+                    <div  class="course-card" data-category="ui/ux" data-title="ui ux design fundamentals"  data-instructor="rawan ahmed">
+                        <div class="course-image">
+                            <img  src="../images/courses/ui.jpeg"alt="UI UX Design Fundamentals">
+                            <span class="course-badge"> Popular</span>
+                            <button class="wishlist"> <i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category"> UI/UX Design</span>
+                            <h3> UI/UX Design Fundamentals</h3>
+                            <p class="instructor">  By Rawan Ahmed</p>
+                            <div class="course-rating">
+                                <span class="rating"> 5.0</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(1k)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong> $39.99 </strong>
+                                <a href="course-details.html?course=uiux"> View Course<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 3 -->
+                    <div class="course-card" data-category="programming" data-title="python programming" data-instructor="omar ali">
+                        <div class="course-image">
+                            <img src="../images/courses/python.jpeg" alt="Python Programming">
+                            <span class="course-badge">Bestseller</span>
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Programming</span>
+                            <h3>Python Programming</h3>
+                            <p class="instructor"> By Omar Ali </p>
+                            <div class="course-rating">
+                                <span class="rating">4.7 </span>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (743)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong> $59.99 </strong>
+                                <a href="course-details.html?course=python">   View Course <i class="fa-solid fa-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 4 -->
+                    <div  class="course-card" data-category="business"  data-title="digital marketing basics"  data-instructor="ahmed hassan">
+                        <div class="course-image">
+                            <img src="../images/courses/digital.jpeg"alt="Digital Marketing Basics">
+                            <span class="course-badge">New </span>
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i> </button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Business</span>
+                            <h3>Digital Marketing Basics</h3>
+                            <p class="instructor"> By Ahmed Hassan</p>
+                            <div class="course-rating">
+                                <span class="rating">4.5</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(621)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong>$29.99</strong>
+                                <a href="course-details.html?course=marketing">  View Course <i class="fa-solid fa-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 5 -->
+                    <div class="course-card" data-category="web" data-title="html css modern web design" data-instructor="sara mohamed" >
+                        <div class="course-image">
+                            <img src="../images/courses/web.jpeg" alt="HTML CSS Modern Web Design">
+                            <span class="course-badge"> Popular</span>
+                            <button class="wishlist"> <i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category"> Web Development</span>
+                            <h3> HTML & CSS Modern Web Design</h3>
+                            <p class="instructor"> By Sara Mohamed</p>
+                            <div class="course-rating">
+                                <span class="rating"> 4.9</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (895)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong> $34.99 </strong>
+                                <a href="course-details.html?course=htmlcss"> View Course<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 6 -->
+                    <div class="course-card" data-category="web" data-title="react js complete guide" data-instructor="Rawan Ahmed">
+                        <div class="course-image">
+                            <img src="../images/courses/react.png" alt="React JS Complete Guide" >
+                            <span class="course-badge"> Bestseller</span>
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Web Development</span>
+                            <h3>  React JS Complete Guide </h3>
+                            <p class="instructor"> By Rawan Ahmed </p>
+                            <div class="course-rating">
+                                <span class="rating">4.9</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (1.5k)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong>$69.99</strong>
+                                <a href="course-details.html?course=react"> View Course<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 7 -->
+                    <div
+                        class="course-card" data-category="data" data-title="data analysis with python" data-instructor="mariam ahmed">
+                        <div class="course-image">
+                            <img src="../images/courses/data.jpeg"alt="Data Analysis with Python">
+                            <span class="course-badge">New</span>
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Data Science</span>
+                            <h3>Data Analysis with Python</h3>
+                            <p class="instructor">By Mariam Ahmed</p>
+                            <div class="course-rating">
+                                <span class="rating">4.8</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(532)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong>$54.99</strong>
+                                <a href="course-details.html?course=data">View Course<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 8 -->
+                    <div class="course-card"data-category="ui/ux"data-title="figma ui ux masterclass" data-instructor="nour ali" >
+                        <div class="course-image">
+                            <img src="../images/courses/ui.jpeg"alt="Figma UI UX Masterclass">
+                            <span class="course-badge"> Popular</span> 
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category"> UI/UX Design</span>
+                            <h3>Figma UI/UX Masterclass</h3>
+                            <p class="instructor">By Nour Ali</p>
+                            <div class="course-rating">
+                                <span class="rating">4.9</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(920)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong>$44.99</strong>
+                                <a href="course-details.html?course=figma">View Course<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- NO RESULTS -->
+                <div class="no-results" id="noResults">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>No courses found</h3>
+                    <p>Try searching for another course or category.</p>
+                </div>
+                <!-- LOAD MORE -->
+                <div class="load-more-container">
+                    <button type="button" class="load-more"id="loadMore">Load More Courses <i class="fa-solid fa-arrow-down"></i></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html" class="logo"><i class="fa-solid fa-graduation-cap"></i><h2>Skillora</h2></a>
+                <p>Learn new skills. Build your future.</p>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#">About</a>
+                <a href="#">Become a Teacher</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Skillora. Learn without limits.</p>
+        </div>
+    </footer>
+
+    <script src="../js/courses.js"></script>
+</body>
+</html>

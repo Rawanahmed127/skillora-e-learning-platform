@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillora - Learn New Skills</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Skill<span>ora</span></h2>
+        </a>
+        <!-- Navigation Links -->
+        <div class="sections">
+            <a href="index.html" class="active">Home</a>
+            <a href="#courses-section">Courses</a>
+            <a href="#about-section">About</a>
+            <a href="#contact-section">Contact</a>
+        </div>
+        <!-- Search + Buttons -->
+        <div class="nav-right">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search courses...">
+            </div>
+             <button type="button" class="wishlist-nav" id="wishlistNavBtn" aria-label="Wishlist" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <button type="button" class="btn1" id="open-login">Login</button>            
+            <button type="button" class="btn2" id="open-signup">Sign Up</button>
+            <button type="button" class="profile-nav" id="profileNavBtn" aria-label="Open Profile" title="Profile">
+               <i class="fa-regular fa-user"></i>
+            </button>
+        </div>
+</nav>
+    
+<!-- ================= HERO ================= -->
+<main>
+        <section class="hero">
+            <!-- LEFT SIDE -->
+            <div class="hero-content">
+                <!-- Small Label -->
+                <div class="hero-label">
+                    <span>Learn</span>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Practice</span>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Build Your Future</span>
+                </div>
+                <!-- Main Heading -->
+                <h1>Upgrade Your Skills With<span>Expert-Led Courses</span> </h1>
+                <!-- Description -->
+                <p class="hero-description">
+                    Access high-quality courses from industry professionals
+                    and learn at your own pace, anytime, anywhere.
+                </p>
+                <!-- Search -->
+                <div class="hero-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for courses, topics, or instructors">
+                    <button class="search-btn">Search</button>
+                </div>
+                <!-- Popular Categories -->
+                <div class="categories">
+                    <span>Web Development</span>
+                    <span>Data Science</span>
+                    <span>UI/UX Design</span>
+                    <span>Business</span>
+                </div>
+                <!-- Statistics -->
+                <div class="info">
+                    <div class="stat">
+                        <h2>10K+</h2>
+                        <span>Active Students</span>
+                    </div>
+                    <div class="stat">
+                        <h2>500+</h2>
+                        <span>Courses</span>
+                    </div>
+                    <div class="stat">
+                        <h2>200+</h2>
+                        <span>Expert Instructors</span>
+                    </div>
+                    <div class="stat">
+                        <h2>4.9/5</h2>
+                        <span>Average Rating</span>
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="hero-image">
+                <div class="image-background"></div>
+                <img src="images/heroimg.png"alt="Student learning online">
+                <!-- Floating Icons -->
+                <div class="floating-icon icon-one">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="floating-icon icon-two">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="floating-icon icon-three">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+            </div>
+        </section>
+</main>
+
+<hr class="section-divider">
+
+<!-- ================= courses-section================= -->
+<section class="courses-section" id="courses-section">
+            <div class="courses-container">
+                <!-- Heading -->
+                <div class="section-heading">
+                    <div>
+                        <h2>Courses</h2>
+                        <p>Choose from our wide range of courses and start learning today.</p>
+                    </div>
+                    <div class="course-count">
+                        <span id="courseCount">8</span>
+                        Courses
+                    </div>
+                </div>
+
+                <!-- ================= FILTERS ================= -->
+                <div class="course-filters">
+                    <button class="filter-btn active"data-category="all">All Courses </button>
+                    <button class="filter-btn" data-category="web"> Web Development </button>
+                    <button class="filter-btn"data-category="programming">Programming </button>
+                    <button class="filter-btn"  data-category="ui/ux"> UI/UX Design </button>
+                    <button class="filter-btn" data-category="data"> Data Science </button>
+                    <button class="filter-btn" data-category="business">Business</button>
+                </div>
+                <!-- ================= COURSE GRID ================= -->
+                <div class="courses-grid" id="coursesGrid">
+                    <!-- COURSE 1 -->
+                    <div
+                        class="course-card" data-category="programming" data-title="javascript for beginners" data-instructor="ahmed hassan">
+                        <div class="course-image">
+                            <img src="images/courses/js.jpg"alt="JavaScript for Beginners">
+                            <span class="course-badge">Bestseller</span>
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category"> Programming </span>
+                            <h3> JavaScript for Beginners</h3>
+                            <p class="instructor">By Ahmed Hassan</p>
+                            <div class="course-rating">
+                                <span class="rating">4.8</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (1.2k)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong>  $19.99 </strong>
+                                <a href="pages/course-details.html?course=javascript">View Course<i class="fa-solid fa-arrow-right"></i></a>                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 2 -->
+                    <div  class="course-card" data-category="ui/ux" data-title="ui ux design fundamentals"  data-instructor="rawan ahmed">
+                        <div class="course-image">
+                            <img  src="images/courses/ui.jpeg"alt="UI UX Design Fundamentals">
+                            <span class="course-badge"> Popular</span>
+                            <button class="wishlist"> <i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category"> UI/UX Design</span>
+                            <h3> UI/UX Design Fundamentals</h3>
+                            <p class="instructor">  By Rawan Ahmed</p>
+                            <div class="course-rating">
+                                <span class="rating"> 5.0</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(1k)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong> $20.00 </strong>
+                                <a href="pages/course-details.html?course=uiux"> View Course<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 3 -->
+                    <div class="course-card" data-category="programming" data-title="python programming" data-instructor="omar ali">
+                        <div class="course-image">
+                            <img src="images/courses/python.jpeg" alt="Python Programming">
+                            <span class="course-badge">Bestseller</span>
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Programming</span>
+                            <h3>Python Programming</h3>
+                            <p class="instructor"> By Omar Ali </p>
+                            <div class="course-rating">
+                                <span class="rating">4.7 </span>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (743)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong> $21.99 </strong>
+                                <a href="pages/course-details.html?course=python">   View Course <i class="fa-solid fa-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 4 -->
+                    <div  class="course-card" data-category="business"  data-title="digital marketing basics"  data-instructor="ahmed hassan">
+                        <div class="course-image">
+                            <img src="images/courses/digital.jpeg"alt="Digital Marketing Basics">
+                            <span class="course-badge">New </span>
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i> </button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Business</span>
+                            <h3>Digital Marketing Basics</h3>
+                            <p class="instructor"> By Sara Mohamed</p>
+                            <div class="course-rating">
+                                <span class="rating">4.5</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(621)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong>$17.99</strong>
+                                <a href="pages/course-details.html?course=marketing">  View Course <i class="fa-solid fa-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 5 -->
+                    <div class="course-card" data-category="web" data-title="html css modern web design" data-instructor="sara mohamed" >
+                        <div class="course-image">
+                            <img src="images/courses/web.jpeg" alt="HTML CSS Modern Web Design">
+                            <span class="course-badge"> Popular</span>
+                            <button class="wishlist"> <i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category"> Web Development</span>
+                            <h3> HTML & CSS Modern Web Design</h3>
+                            <p class="instructor"> By Rawan Ahmed</p>
+                            <div class="course-rating">
+                                <span class="rating"> 4.9</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (895)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong> $18.99 </strong>
+                                <a href="pages/course-details.html?course=htmlcss">View Course<i class="fa-solid fa-arrow-right"></i></a>                     
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 6 -->
+                    <div class="course-card" data-category="web" data-title="react js complete guide" data-instructor="Rawan Ahmed">
+                        <div class="course-image">
+                            <img src="images/courses/react.png" alt="React JS Complete Guide" >
+                            <span class="course-badge"> Bestseller</span>
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Web Development</span>
+                            <h3>  React JS Complete Guide </h3>
+                            <p class="instructor"> By Rawan Ahmed </p>
+                            <div class="course-rating">
+                                <span class="rating">4.9</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (1.5k)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong>$29.99</strong>
+                                <a href="pages/course-details.html?course=react"> View Course<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 7 -->
+                    <div
+                        class="course-card" data-category="data" data-title="data analysis with python" data-instructor="mariam ahmed">
+                        <div class="course-image">
+                            <img src="images/courses/data.jpeg"alt="Data Analysis with Python">
+                            <span class="course-badge">New</span>
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Data Science</span>
+                            <h3>Data Analysis with Python</h3>
+                            <p class="instructor">By Mariam Ahmed</p>
+                            <div class="course-rating">
+                                <span class="rating">4.8</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(532)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong>$26.99</strong>
+                                <a href="pages/course-details.html?course=data">View Course<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COURSE 8 -->
+                    <div class="course-card"data-category="ui/ux"data-title="figma ui ux masterclass" data-instructor="nour ali" >
+                        <div class="course-image">
+                            <img src="images/courses/ui.jpeg"alt="Figma UI UX Masterclass">
+                            <span class="course-badge"> Popular</span> 
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category"> UI/UX Design</span>
+                            <h3>Figma UI/UX Masterclass</h3>
+                            <p class="instructor">By Nour Ali</p>
+                            <div class="course-rating">
+                                <span class="rating">4.9</span>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(920)</span>
+                            </div>
+                            <div class="course-bottom">
+                                <strong>$27.99</strong>
+                                <a href="pages/course-details.html?course=figma">View Course<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- NO RESULTS -->
+                <div class="no-results" id="noResults">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>No courses found</h3>
+                    <p>Try searching for another course or category.</p>
+                </div>
+                <!-- LOAD MORE -->
+                <div class="load-more-container">
+                    <button type="button" class="load-more"id="loadMore">Load More Courses <i class="fa-solid fa-arrow-down"></i></button>
+                </div>
+            </div>
+</section>
+
+<!-- =============================== ABOUT SECTION ================================ -->
+<section class="about-section" id="about-section">
+    <div class="about-container">
+        <div class="about-content">
+            <span class="section-label">ABOUT SKILLORA</span>
+            <h2>Learn. Practice.<span>Build Your Future.</span></h2>
+            <p> Skillora is an online learning platform designedto help you learn practical skills, practice what you learn, 
+                and build your future with confidence.</p>
+            <p>Explore courses in web development, programming, UI/UX design, data analysis, business, and more.</p>
+            <div class="about-features">
+                <div class="about-feature">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <h3>Learn</h3>
+                        <p>Learn from structured courses.</p>
+                    </div>
+                </div>
+                <div class="about-feature">
+                    <i class="fa-solid fa-code"></i>
+                    <div>
+                        <h3>Practice</h3>
+                        <p>Practice your skills through projects.</p>
+                    </div>
+                </div>
+                <div class="about-feature">
+                    <i class="fa-solid fa-rocket"></i>
+                    <div>
+                        <h3>Grow</h3>
+                        <p>Build skills for your future career.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-card">
+            <i class="fa-solid fa-book-open"></i>
+            <h3>Start Learning Today</h3>
+            <p> Discover courses and start building your skills step by step.</p>
+            <a href="#courses-section">Explore Courses</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ CONTACT SECTION  ================================= -->
+<section class="contact-section" id="contact-section">
+    <div class="contact-container">
+        <div class="contact-heading">
+            <span class="section-label">CONTACT US</span>
+            <h2> Have a question?<span>Let's talk.</span></h2>
+            <p> Have a question about our courses or Skillora? Send us a message and we'll get back to you.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>support@skillora.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+20 100 000 0000</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Cairo, Egypt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="contactName"> Name </label>
+                    <input type="text" id="contactName" placeholder="Your name" >
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail"> Email </label>
+                    <input type="email" id="contactEmail" placeholder="Your email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contactSubject"> Subject </label>
+                <input type="text" id="contactSubject" placeholder="How can we help?" >
+            </div>
+            <div class="form-group">
+                <label for="contactMessage"> Message </label>
+                <textarea id="contactMessage"rows="6"placeholder="Write your message..."></textarea>
+            </div>
+            <button type="submit" class="contact-btn">Send Message<i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
+</section>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo footer-logo">
+    <i class="fa-solid fa-graduation-cap"></i>
+    <h2>Skill<span>ora</span></h2>
+</a>
+
+            <p>Learn practical skills, practice with confidence, and build your future with Skillora.</p>
+
+            <div class="footer-socials">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Platform -->
+        <div class="footer-column">
+
+            <h3>Platform</h3>
+
+            <a href="index.html">Home</a>
+            <a href="#courses-section">Courses</a>
+            <a href="#about-section">About Us</a>
+            <a href="#contact-section">Contact</a>
+
+        </div>
+
+
+        <!-- Categories -->
+        <div class="footer-column">
+
+    <h3>Categories</h3>
+
+    <a href="#courses-section" data-footer-category="web">
+        Web Development
+    </a>
+
+    <a href="#courses-section" data-footer-category="programming">
+        Programming
+    </a>
+
+    <a href="#courses-section" data-footer-category="ui/ux">
+        UI/UX Design
+    </a>
+
+    <a href="#courses-section" data-footer-category="data">
+        Data Analysis
+    </a>
+
+    <a href="#courses-section" data-footer-category="business">
+        Business
+    </a>
+
+</div>
+
+
+        <!-- Contact -->
+        <div class="footer-column footer-contact">
+
+            <h3>Get In Touch</h3>
+
+            <div class="footer-contact-item">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <span>support@skillora.com</span>
+
+            </div>
+
+            <div class="footer-contact-item">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>+20 100 000 0000</span>
+
+            </div>
+
+            <div class="footer-contact-item">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span>Cairo, Egypt</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+
+        <div class="footer-bottom-container">
+
+            <p>
+                © 2026 Skillora. All rights reserved.
+            </p>
+
+            <div class="footer-legal">
+
+                <a href="pages/privacy.html">Privacy Policy</a>
+
+                <span>|</span>
+
+                <a href="pages/terms.html">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ================= LOGIN  ================= -->
+<div class="login-modal" id="loginModal">
+          <div class="login-card">
+             <!-- CLOSE BUTTON -->
+             <button type="button" class="close-btn" id="closeLogin"> <i class="fa-solid fa-xmark"></i></button>
+             <!-- LOGO -->
+             <div class="login-logo">
+               <i class="fa-solid fa-graduation-cap"></i>
+               <span>Skillora</span>
+            </div>
+            <!-- HEADER -->
+            <div class="form-header">
+            <h2>Welcome back!</h2>
+            <p>Sign in to continue to your account</p>
+            </div>
+            <!-- LOGIN FORM -->
+            <form id="loginForm">
+            <!-- EMAIL -->
+            <div class="input-group">
+                <label for="loginEmail">Email Address</label>
+                <div class="input-box">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <!-- PASSWORD -->
+            <div class="input-group">
+                <div class="password-label">
+                    <label for="loginPassword">Password</label>
+                    <a href="#" id="forgotPassword">Forgot password?</a>         
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    <button type="button" class="show-password" id="showPassword">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- ERROR -->
+            <div class="login-error" id="loginError"></div>
+            <!-- REMEMBER -->
+            <div class="remember">
+                <label>
+                    <input type="checkbox">
+                    <span>Remember me</span>
+                </label>
+            </div>
+            <!-- LOGIN BUTTON -->
+            <button type="submit"class="login-btn"id="loginBtn"> Sign In </button>
+        </form>
+        <!-- DIVIDER -->
+        <div class="divider">
+            <span>or continue with</span>
+        </div>
+        <!-- SOCIAL LOGIN -->
+        <div class="social-login">
+            <button type="button"><i class="fa-brands fa-google"></i> Google </button>
+            <button type="button"> <i class="fa-brands fa-github"></i> GitHub </button>
+        </div>
+        <!-- REGISTER -->
+        <p class="register-text">Don't have an account<button type="button" id="goToSignup">Create one</button></p>    
+    </div>
+</div>
+
+<!-- ================= FORGOT PASSWORD ================= -->
+<div class="forgot-modal" id="forgotModal">
+    <div class="forgot-card">
+        <!-- CLOSE -->
+        <button type="button" class="forgot-close" id="closeForgot"><i class="fa-solid fa-xmark"></i></button>
+        <!-- ================= STEP 1 : EMAIL ================= -->
+        <div class="forgot-step active" id="forgotEmailStep">
+            <div class="forgot-logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Skillora</span>
+            </div>
+            <div class="forgot-header"><div class="forgot-icon"><i class="fa-solid fa-lock"></i></div>
+                <h2>Forgot Password?</h2>
+                <p>Enter your email and we'll send you a verification code.</p>
+            </div>
+            <form id="forgotEmailForm">
+                <div class="forgot-input-group">
+                    <label for="forgotEmail">Email Address</label>
+                    <div class="forgot-input-box">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="forgotEmail"placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="forgot-message"id="forgotEmailMessage"></div>
+                <button type="submit"class="forgot-btn">Send Verification Code</button>
+            </form>
+            <button type="button" class="forgot-back" id="backToLogin">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Login
+            </button>
+        </div>
+
+        <!-- ================= STEP 2 : OTP ================= -->
+        <div class="forgot-step" id="forgotOtpStep">
+            <div class="forgot-icon">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="forgot-header">
+                <h2>Verify Your Email</h2>
+                <p>We sent a 6-digit verification code to</p>
+                <strong id="forgotOtpEmail">example@email.com</strong>
+            </div>
+            <div class="forgot-otp-inputs">
+                <input type="text"maxlength="1"class="forgot-otp-input" inputmode="numeric">
+                <input type="text"maxlength="1"class="forgot-otp-input"inputmode="numeric">
+                <input type="text" maxlength="1"class="forgot-otp-input" inputmode="numeric">
+                <input type="text" maxlength="1"class="forgot-otp-input" inputmode="numeric">
+                <input type="text"maxlength="1"class="forgot-otp-input" inputmode="numeric">
+                <input type="text" maxlength="1"class="forgot-otp-input" inputmode="numeric">
+            </div>
+            <div class="forgot-message"id="forgotOtpMessage"></div>
+            <button type="button"class="forgot-btn"id="verifyForgotOtp">Verify Code </button>
+            <p class="forgot-resend">Didn't receive the code?
+                <button type="button"id="resendForgotOtp"> Resend OTP</button></p>
+                <button type="button"class="forgot-back"id="backToForgotEmail"><i class="fa-solid fa-arrow-left"></i>Change Email</button>
+        </div>
+
+        <!-- ================= STEP 3 : NEW PASSWORD ================= -->
+        <div class="forgot-step" id="newPasswordStep">
+            <div class="forgot-icon">
+                <i class="fa-solid fa-key"></i>
+            </div>
+            <div class="forgot-header">
+                <h2>Create New Password</h2>
+                <p> Enter your new password below.</p>
+            </div>
+            <form id="resetPasswordForm">
+                <!-- NEW PASSWORD -->
+                <div class="forgot-input-group">
+                    <label for="newPassword">New Password</label>
+                    <div class="forgot-input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="newPassword"placeholder="Create a new password"required>
+                        <button type="button" class="forgot-show-password" id="showNewPassword"><i class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <!-- CONFIRM PASSWORD -->
+                <div class="forgot-input-group">
+                    <label for="confirmNewPassword">Confirm Password</label>
+                    <div class="forgot-input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password"id="confirmNewPassword"placeholder="Confirm your password"required>
+                        <button type="button"class="forgot-show-password"id="showConfirmNewPassword"><i class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="forgot-message"id="resetPasswordMessage"></div>
+                <button type="submit"class="forgot-btn"> Reset Password </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ================= SIGN UP  ================= -->
+<div class="signup-modal" id="signupModal">
+    <div class="signup-card">
+        <!-- Close -->
+        <button type="button" class="signup-close" id="closeSignup">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <!-- ================= STEP 1 ================= -->
+        <div class="signup-step" id="signupStep">
+            <!-- Logo -->
+            <div class="signup-logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Skillora</span>
+            </div>
+            <!-- Header -->
+            <div class="signup-header">
+                <h2>Create your account</h2>
+                <p>Start learning and build your future</p>
+            </div>
+            <form id="signupForm">
+                <!-- Name -->
+                <div class="signup-input-group">
+                    <label for="signupName">Full Name</label>
+                    <div class="signup-input-box">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text"id="signupName"placeholder="Enter your full name"required>
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="signup-input-group">
+                    <label for="signupEmail">Email Address</label>
+                    <div class="signup-input-box">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <!-- Password -->
+                <div class="signup-input-group">
+                    <label for="signupPassword">Password </label>
+                    <div class="signup-input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="signupPassword" placeholder="Create a password" required>
+                        <button type="button" class="signup-show-password" id="showSignupPassword">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Confirm Password -->
+                <div class="signup-input-group">
+                    <label for="signupConfirmPassword"> Confirm Password </label>
+                    <div class="signup-input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="signupConfirmPassword"  placeholder="Confirm your password" required >
+                        <button  type="button" class="signup-show-password" id="showConfirmPassword">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Terms -->
+                <div class="signup-terms">
+                    <input type="checkbox" id="signupTerms" required >
+                    <label for="signupTerms">
+                        I agree to the
+                        <a href="pages/terms.html" target="_blank"> Terms of Service</a>
+                        and
+                        <a href="pages/privacy.html" target="_blank"> Privacy Policy </a>
+                    </label>
+                </div>
+                <!-- Error -->
+                <div class="signup-message" id="signupMessage"></div>
+                <!-- Create Account -->
+                <button type="submit" class="signup-submit" id="signupSubmit">  Create Account </button>
+            </form>
+            <!-- Divider -->
+            <div class="signup-divider">
+                <span>or continue with</span>
+            </div>
+            <!-- Social -->
+            <div class="signup-social">
+                <button type="button" id="googleSignup"><i class="fa-brands fa-google"></i>Google </button>
+                <button type="button" id="githubSignup"><i class="fa-brands fa-github"></i>GitHub</button>
+            </div>
+            <!-- Login -->
+            <p class="signup-login-text">
+                Already have an account?
+                <button type="button"id="goToLogin">Sign in </button>
+            </p>
+        </div>
+        <!-- ================= STEP 2 : OTP ================= -->
+        <div class="otp-step" id="otpStep">
+            <div class="otp-icon">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="otp-header">
+                <h2>Verify your email</h2>
+                <p> We sent a 6-digit verification code to</p>
+                <strong id="otpEmail">example@email.com </strong>
+            </div>
+            <!-- OTP Inputs -->
+            <div class="otp-inputs">
+                <input type="text" maxlength="1" class="otp-input" inputmode="numeric" >
+                <input type="text"maxlength="1"class="otp-input"inputmode="numeric" >
+                <input type="text" maxlength="1"class="otp-input"inputmode="numeric">
+                <input type="text" maxlength="1" class="otp-input"inputmode="numeric">
+                <input type="text"maxlength="1" class="otp-input"inputmode="numeric">
+                <input type="text" maxlength="1" class="otp-input"inputmode="numeric">
+            </div>
+            <div class="otp-message" id="otpMessage"> </div>
+            <!-- Verify -->
+            <button type="button" class="verify-otp-btn"id="verifyOtp">Verify Email</button>
+            <!-- Resend -->
+            <p class="resend-text"> Didn't receive the code?<button  type="button"id="resendOtp">Resend OTP</button></p>
+            <!-- Back -->
+            <button type="button"class="back-signup"id="backToSignup"><i class="fa-solid fa-arrow-left"></i>Back to Sign Up</button>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT SUCCESS POPUP -->
+<div class="contact-popup" id="contactPopup">
+    <div class="contact-popup-box">
+        <button class="contact-popup-close" id="contactPopupClose"> <i class="fa-solid fa-xmark"></i></button>
+        <div class="contact-popup-icon"><i class="fa-solid fa-check"></i></div>
+        <h3>Message Sent!</h3>
+        <p>Thank you for contacting us. We'll get back to you soon.</p>
+        <button class="contact-popup-btn" id="contactPopupOk">OK</button>
+    </div>
+</div>
+
+<!-- ====== WISHLIST POPUP ======= -->
+<div class="wishlist-overlay" id="wishlistOverlay">
+    <div class="wishlist-popup">
+        <!-- HEADER -->
+        <div class="wishlist-popup-header">
+            <div>
+                <h2>My Wishlist</h2>
+                <p id="wishlistCount">  0 courses saved </p>
+            </div>
+            <button class="wishlist-close" id="wishlistClose" aria-label="Close Wishlist">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <!-- COURSES -->
+        <div class="wishlist-popup-content" id="wishlistPopupContent"></div>
+
+        <!-- EMPTY STATE -->
+        <div
+            class="wishlist-popup-empty"
+            id="wishlistPopupEmpty">
+            <div class="wishlist-empty-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3> Your wishlist is empty</h3>
+            <p> Save courses you want to learn and find them here later. </p>
+        </div>
+    </div>
+</div>
+
+<!-- ====== MY COURSES POPUP ====== -->
+<div class="user-page-overlay" id="myCoursesOverlay">
+<div class="user-page-popup">
+    <button type="button" class="user-page-close" id="myCoursesClose" aria-label="Close My Courses">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="user-page-header">
+        <div class="user-page-icon"> <i class="fa-solid fa-book-open"></i></div>
+        <div>
+            <span>Learning</span>
+            <h2>My Courses</h2>
+            <p>Continue your learning journey.</p>
+        </div>
+    </div>
+    <div class="my-courses-list" id="myCoursesList">
+        <!-- Enrolled courses will appear here -->
+    </div>
+    <div class="my-courses-empty" id="myCoursesEmpty">
+        <div class="empty-icon">
+            <i class="fa-solid fa-book-open"></i>
+        </div>
+        <h3>No Courses Yet</h3>
+        <p> You haven't enrolled in any courses yet. Start learning today!</p>
+        <button type="button" class="browse-courses-btn" id="browseCoursesBtn"> Browse Courses</button>
+    </div>
+</div>
+</div>
+
+<!-- ======  PAYMENT DETAILS POPUP ===== -->
+<div class="payment-overlay" id="paymentOverlay">
+    <div class="payment-popup">
+        <button type="button"class="payment-close" id="paymentClose" aria-label="Close Payment Details">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="payment-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <span class="payment-label"> Payment </span>
+        <h2> Payment details sent!</h2>
+        <p id="paymentMessage"> Payment details for your course have been sent to your email.</p>
+        <button type="button" class="payment-ok-btn" id="paymentOkBtn">OK </button>
+    </div>
+</div>
+
+<!-- ========= MY PROFILE POPUP ======= -->
+<div class="user-page-overlay" id="myProfileOverlay">
+<div class="user-page-popup profile-popup">
+    <button type="button" class="user-page-close" id="myProfileClose" aria-label="Close My Profile">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="user-page-header">
+        <div class="user-page-icon">
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <div>
+            <span>Account</span>
+            <h2>My Profile</h2>
+            <p>Manage your personal information.</p>
+        </div>
+    </div>
+    <div class="profile-avatar-section">
+        <div class="profile-large-avatar"> <i class="fa-regular fa-user"></i></div>
+        <div>
+            <h3 id="profileDisplayName">User</h3>
+            <p id="profileDisplayEmail">email@example.com</p>
+        </div>
+    </div>
+    <form id="profileForm">
+        <div class="profile-field">
+            <label for="profileName">Full Name</label>
+            <div class="profile-input">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" id="profileName" placeholder="Enter your name" autocomplete="name">
+            </div>
+        </div>
+        <div class="profile-field">
+            <label for="profileEmail">  Email Address</label>
+            <div class="profile-input">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="profileEmail" placeholder="Enter your email" autocomplete="email">
+            </div>
+        </div>
+        <p class="profile-message" id="profileMessage"></p>
+        <button type="submit" class="profile-save-btn">
+            <i class="fa-solid fa-check"></i>
+            Save Changes
+        </button>
+    </form>
+</div>
+</div>
+
+<!-- ====== DASHBOARD POPUP ====== -->
+<div class="dashboard-overlay" id="dashboardOverlay">
+    <div class="dashboard-popup">
+        <!-- CLOSE -->
+        <button type="button" class="dashboard-close" id="dashboardClose" aria-label="Close Dashboard">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <!-- USER INFO -->
+        <div class="dashboard-profile">
+            <div class="dashboard-avatar">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="dashboard-user-info">
+                <span>Welcome back!</span>
+                <h2 id="dashboardUserName">User</h2>
+                <p id="dashboardUserEmail"> email@example.com</p>
+            </div>
+        </div>
+        <!-- MENU -->
+        <div class="dashboard-menu">
+            <button type="button" class="dashboard-item" id="dashboardCourses">
+                <div class="dashboard-item-icon"><i class="fa-solid fa-book-open"></i></div>
+                <span>My Courses</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <button type="button" class="dashboard-item" id="dashboardWishlist">
+                <div class="dashboard-item-icon"> <i class="fa-regular fa-heart"></i></div>
+                <span>My Wishlist</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <button type="button" class="dashboard-item" id="dashboardProfile">
+                <div class="dashboard-item-icon"><i class="fa-regular fa-user"></i></div>
+                <span>My Profile</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <!-- LOGOUT -->
+        <button type="button" class="dashboard-logout" id="dashboardLogout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+        </button>
+    </div>
+</div>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
+
